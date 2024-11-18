@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Continental</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+    /* Global Styles */
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('bg.avif');
+        color: #F5F5F5;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    a {
+        text-decoration: none;
+        color: #D4AF37;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem 1rem 0.5rem;
+        background: rgba(10, 10, 10, 0.9);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+    nav a {
+        margin: 0 15px;
+        font-size: 1.1rem;
+    }
+    nav a:hover {
+        color: #FFF;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 100vh;
+        background: url('https://source.unsplash.com/1600x900/?luxury,hotel') no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+        text-shadow: 0 0 10px #000;
+    }
+    .hero h1 {
+        font-family: 'Cinzel', serif;
+        font-size: 3rem;
+        letter-spacing: 2px;}
+
+    .hero h1:hover {
+        font-family: 'Cinzel', serif;
+        font-size: 3rem;
+        letter-spacing: 2px;
+        
+    }
+    .hero button {
+        padding: 1rem 2rem;
+        margin-top: 20px;
+        border: 2px solid #D4AF37;
+        background: transparent;
+        color: #D4AF37;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .hero button:hover {
+        background: #D4AF37;
+        color: #0A0A0A;
+    }
+
+    /* About Section */
+    .about {
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+    .about h2 {
+        font-family: 'Cinzel', serif;
+        font-size: 2.5rem;
+        color: #D4AF37;
+    }
+    .about p {
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+
+    /* Members Section */
+    .members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem 1rem;
+    }
+    .member-card {
+        width: 200px;
+        margin: 15px;
+        text-align: center;
+        border: 2px solid #D4AF37;
+        padding: 20px;
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+    .member-card:hover {
+        transform: scale(1.05);
+    }
+
+    /* Gallery Section */
+    .gallery {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+        border: 3px solid #D4AF37;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    /* Events Section */
+    .events {
+        padding: 4rem 2rem;
+        background: #1A1A1A;
+    }
+    .events h2 {
+        text-align: center;
+        color: #D4AF37;
+    }
+    .event {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 10px;
+        border-left: 4px solid #D4AF37;
+    }
+
+    /* Contact Section */
+    .contact {
+        padding: 2rem;
+        text-align: center;
+    }
+    .contact form input, .contact form textarea {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 2px solid #D4AF37;
+        background: #0A0A0A;
+        color: #FFF;
+    }
+    .contact form button {
+        padding: 10px 20px;
+        background: #D4AF37;
+        color: #0A0A0A;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1rem;
+        text-align: center;
+        background: #0A0A0A;
+        color: #D4AF37;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .hero h1 {
+            text-align: center;
+            font-size: 2rem;
+        }
+        .member-card {
+            width: 150px;
+        }
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <div>The Continental</div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#members">Members</a>
+            <a href="#gallery">Gallery</a>
+            <a href="/notice.html">Notice</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to The Continental</h1>
+        <button onclick="location.href='#about'">Explore More</button>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>The Continental is an exclusive place for the best of the best. A hub for legends to unite and share unforgettable moments.</p>
+    </section>
+
+    <section id="members" class="members">
+        <div class="member-card">SAYANTAN</div>
+        <div class="member-card">BINIT</div>
+        <div class="member-card">NEELADRI</div>
+        <div class="member-card">SANKHADIP</div>
+        <div class="member-card">ANEEK</div>
+        <div class="member-card">SUBHOJIT</div>
+        <div class="member-card">ABHIJIT</div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <img src="per.png" alt="Gallery Image">
+        <img src="per.png" alt="Gallery Image">
+        <img src="per.png" alt="Gallery Image">
+        <img src="per.png" alt="Gallery Image">
+        <img src="per.png" alt="Gallery Image">
+        <img src="per.png" alt="Gallery Image">
+    </section>
+
+    <section id="events" class="events">
+        <h2>Upcoming Events</h2>
+        <div class="event">Annual Gathering - December 25</div>
+        <div class="event">Special Hunt Event - January 15</div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea rows="4" placeholder="Message"></textarea> <br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 The Continental. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

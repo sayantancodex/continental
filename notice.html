@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notice Board - The Continental</title>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'VT323', monospace;
+        background-color: #000;
+        color: #00FF00;
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+        font-size: 18px;
+    }
+    h1 {
+        text-align: center;
+        color: #00FF00;
+        text-shadow: 0px 0px 10px #00FF00;
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    .notice-container {
+        border: 1px solid #00FF00;
+        padding: 15px;
+        border-radius: 5px;
+        background: #000;
+    }
+    .notice {
+        padding: 10px 0;
+        border-bottom: 1px dashed #00FF00;
+    }
+    .notice:last-child {
+        border-bottom: none;
+    }
+    .notice-title {
+        font-weight: bold;
+        color: #00FF00;
+    }
+    .notice-date {
+        font-size: 0.9em;
+        color: #00CC00;
+    }
+    .notice-content {
+        margin-top: 5px;
+        color: #00FF00;
+    }
+    /* Blinking cursor effect */
+    .cursor {
+        display: inline-block;
+        width: 10px;
+        height: 20px;
+        background-color: #00FF00;
+        animation: blink 1s steps(2, start) infinite;
+    }
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+</head>
+<body>
+    <h1>The Continental Notice Board</h1>
+    <div class="notice-container">
+        <div class="notice">
+            <div class="notice-title" style="color: red;">[EXCOMMUNICADO]</div>
+            <div class="notice-date">Date: 2024-11-17</div>
+            <div class="notice-content">
+                <img src="binit.png" style="height: 100px;"><br>
+                SUBJECT     : Kapri, Binit<br>
+                BOUNTY      : nil<br>
+                DISTRIBUTION: ITER<br>
+                STATUS      : <span style="color: red;">ACTIVE</span><br>
+                UPDATE      : EXCOMMUNICADO<br>
+                REASON      : COMMUNICATION WITH EXCOMMUNICADO<br>
+                FINE        : Rs. 36<br>
+                DURATION    : 1440mins<br>
+            </div>
+        </div>
+        <div class="notice">
+            <div class="notice-title" style="color: red;">[EXCOMMUNICADO]</div>
+            <div class="notice-date">Date: 2024-11-17</div>
+            <div class="notice-content">
+                <img src="pijush.png" style="height: 100px;"><br>
+                SUBJECT     : Kundu, Pijush<br>
+                BOUNTY      : nil<br>
+                DISTRIBUTION: ITER<br>
+                STATUS      : <span style="color: red;">ACTIVE</span><br>
+                UPDATE      : EXCOMMUNICADO<br>
+                REASON      : COMMUNICATION WITH EXCOMMUNICADO<br>
+                FINE        : Rs. 36<br>
+                DURATION    : 1440mins<br>
+            </div>
+        </div>
+        <div class="notice">
+            <div class="notice-title">[Welcome to The Continental]</div>
+            <div class="notice-date">Date: 2024-11-11</div>
+            <div class="notice-content">
+                This is the first notice on our board. Stay tuned for important updates.
+            </div>
+        </div>
+        
+    </div>
+    <div class="cursor"></div>
+</body>
+</html>
